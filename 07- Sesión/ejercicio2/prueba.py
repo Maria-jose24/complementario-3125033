@@ -1,29 +1,41 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from sklearn.linear_model import LinearRegression
 from scipy import stats
 
-# Leer el CSV
-df = pd.read_csv('archivo.csv', sep=',', skiprows=1)
-df.columns = ['Semana', 'software']
-df['Semana'] = pd.to_datetime(df['Semana'])
+# Cargar los datos desde un archivo CSV
+df = pd.read_csv('archivo.csv')
 
-# Estadísticas descriptivas
-print("Estadísticas descriptivas:")
-print(df['software'].describe())
+# Asegúrate de que no hay valores NaN en las columnas de interés
+df_clean = df.dropna(subset=['Python', 'Java', 'C++'])
 
-# Graficar serie temporal
-plt.figure(figsize=(15, 6))
-plt.plot(df['Semana'], df['software'], marker='o')
-plt.title('Evolución del software con el tiempo')
-plt.xlabel('Fecha')
-plt.ylabel('Valor')
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
+# Variables
+X = df_clean[['Python']].values
+y = df_clean['Java'].values
 
-# Análisis de tendencia
-from statsmodels.tsa.seasonal import seasonal_decompose
-result = seasonal_decompose(df['software'], period=52)  # Periodo anual
-result.plot()
-plt.show()
+# Modelo de regresión lineal
+modelo = LinearRegression().fit(X, y)
+y_pred = modelo.predict(X)
+
+# Calcular coeficiente de correlación
+correlacion, p_value = stats.pearsonr(X.flatten(), y)
+
+# Hipótesis: si el valor p es menor que 0.05, rechazamos la hipótesis nula
+# y concluimos que hay una relación significativa
+if p_value < 0.05:
+    print(f"Existe una relación significativa entre Python y Java (p-value = {p_value:.4f}).")
+    
+    # Graficar los puntos y la línea de regresión
+    plt.figure(figsize=(10, 6))
+    plt.scatter(X, y, color='blue', s=100, label='Datos')
+    plt.plot(X, y_pred, color='red', label='Línea de regresión')
+    plt.title('Relación entre Python y Java', fontsize=16)
+    plt.xlabel('Python', fontsize=14)
+    plt.ylabel('Java', fontsize=14)
+    plt.legend(loc='best')
+    plt.grid(True, linestyle='--', alpha=0.5)
+    plt.tight_layout()
+    plt.show()
+else:
+    print(f"No existe una relación significativa entre Python y Java (p-value = {p_value:.4f}).")
