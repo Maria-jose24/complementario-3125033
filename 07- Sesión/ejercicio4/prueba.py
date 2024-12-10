@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from scipy import stats
 
 # Cargar los datos desde un archivo CSV
-df = pd.read_csv('archivo.csv')
+df = pd.read_csv(r"C:\Users\Usuario\OneDrive - SENA\Documentos\complementario-3125033\07- Sesión\ejercicio4\archivo.csv")
 
 # Asegúrate de que no hay valores NaN en las columnas de interés
 df_clean = df.dropna(subset=['Framework'])
@@ -30,7 +30,7 @@ if p_value < 0.05:
     plt.figure(figsize=(14, 8))  # Aumentar el tamaño de la figura
     plt.scatter(df_clean['Semana'], y, color='blue', s=100, label='Datos')
     plt.plot(df_clean['Semana'], y_pred, color='red', label='Línea de regresión')
-    plt.title('Popularidad de Framework a lo Largo del Tiempo', fontsize=16)
+    plt.title('Tendencia del Uso de Framework a lo Largo del Tiempo', fontsize=16)
     plt.xlabel('Semana', fontsize=14)
     plt.ylabel('Framework', fontsize=14)
     plt.legend(loc='best')

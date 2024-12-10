@@ -38,7 +38,7 @@ if p_value < 0.05:
     plt.scatter(df_clean['Semana'], y, color='blue', s=100, label='Datos')  # Puntos de datos originales
     plt.plot(df_clean['Semana'], y_pred, color='red', label='Línea de regresión')  # Línea de regresión predicha
     # Configurar el título y las etiquetas de los ejes
-    plt.title('Popularidad de la Arquitectura de Software a lo Largo del Tiempo', fontsize=16)
+    plt.title('Evolución de las Preferencias en Arquitectura de Software', fontsize=16)
     plt.xlabel('Semana', fontsize=14)
     plt.ylabel('Arquitectura de Software', fontsize=14)
     plt.legend(loc='best')  # Agregar leyenda en la mejor posición automática

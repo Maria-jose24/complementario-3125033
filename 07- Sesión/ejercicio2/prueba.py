@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from scipy import stats
 
 # Cargar los datos desde un archivo CSV
-df = pd.read_csv('archivo.csv')
+df = pd.read_csv(r"C:\Users\Usuario\OneDrive - SENA\Documentos\complementario-3125033\07- Sesión\ejercicio2\archivo.csv")
 
 # Asegúrate de que no hay valores NaN en las columnas de interés
 df_clean = df.dropna(subset=['Python', 'Java', 'C++'])
@@ -30,7 +30,7 @@ if p_value < 0.05:
     plt.figure(figsize=(10, 6))
     plt.scatter(X, y, color='blue', s=100, label='Datos')
     plt.plot(X, y_pred, color='red', label='Línea de regresión')
-    plt.title('Relación entre Python y Java', fontsize=16)
+    plt.title('Análisis de Correlación entre Python y Java', fontsize=16)
     plt.xlabel('Python', fontsize=14)
     plt.ylabel('Java', fontsize=14)
     plt.legend(loc='best')

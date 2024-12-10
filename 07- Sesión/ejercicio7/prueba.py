@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from scipy import stats
 
 # Cargar los datos desde un archivo CSV
-df = pd.read_csv('archivo.csv', sep='|')
+df = pd.read_csv(r"C:\Users\Usuario\OneDrive - SENA\Documentos\complementario-3125033\07- Sesión\ejercicio7\archivo.csv", sep='|')
 
 # Asegúrate de que no hay valores NaN en las columnas de interés
 df_clean = df.dropna(subset=['Race Effectiveness', 'Exercise1 Effectiveness'])
@@ -30,7 +30,7 @@ if p_value < 0.05:
     plt.figure(figsize=(10, 6))
     plt.scatter(X, y, color='blue', s=100, label='Datos')
     plt.plot(X, y_pred, color='red', label='Línea de regresión')
-    plt.title('Relación entre Race Effectiveness y Exercise1 Effectiveness', fontsize=16)
+    plt.title('Análisis y Efectividad entre Race Effectiveness y Exercise 1 Effectiveness.', fontsize=16)
     plt.xlabel('Race Effectiveness', fontsize=14)
     plt.ylabel('Exercise1 Effectiveness', fontsize=14)
     plt.legend(loc='best')

@@ -18,8 +18,8 @@ print(df['software'].describe())
 
 # Graficar serie temporal
 plt.figure(figsize=(15, 6))
-plt.plot(df['Semana'], df['software'], marker='o')
-plt.title('Evolución del software con el tiempo')
+plt.plot(df['Semana'], df['software'], marker='o', color='red')  # Cambiar el color a rojo
+plt.title('Transformación del Software a lo largo del tiempo')
 plt.xlabel('Fecha')
 plt.ylabel('Valor')
 plt.xticks(rotation=45)
