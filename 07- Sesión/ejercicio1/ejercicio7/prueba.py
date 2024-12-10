@@ -28,7 +28,7 @@ if p_value < 0.05:
     
     # Graficar los puntos y la línea de regresión
     plt.figure(figsize=(10, 6))
-    plt.scatter(X, y, color='blue', s=100, label='Datos')
+    plt.scatter(X, y, color='mediumpurple', s=100, label='Datos')  # Puntos en morado claro
     plt.plot(X, y_pred, color='red', label='Línea de regresión')
     plt.title('Análisis y Efectividad entre Race Effectiveness y Exercise 1 Effectiveness.', fontsize=16)
     plt.xlabel('Race Effectiveness', fontsize=14)

@@ -35,7 +35,7 @@ if p_value < 0.05:
     
     # Graficar los datos y la línea de regresión
     plt.figure(figsize=(14, 8))  # Crear una figura más grande para mejor visualización
-    plt.scatter(df_clean['Semana'], y, color='blue', s=100, label='Datos')  # Puntos de datos originales
+    plt.scatter(df_clean['Semana'], y, color='orange', s=100, label='Datos')  # Puntos de datos en color naranja
     plt.plot(df_clean['Semana'], y_pred, color='red', label='Línea de regresión')  # Línea de regresión predicha
     # Configurar el título y las etiquetas de los ejes
     plt.title('Evolución de las Preferencias en Arquitectura de Software', fontsize=16)

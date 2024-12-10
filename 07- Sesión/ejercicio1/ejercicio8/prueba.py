@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from scipy import stats
 
 # Cargar los datos desde un archivo CSV
-df = pd.read_csv(r'C:\Users\Usuario\OneDrive - SENA\Documentos\complementario-3125033\07- Sesion\ejercicio8\archivo.csv')
+df = pd.read_csv(r'C:\Users\Usuario\OneDrive - SENA\Documentos\complementario-3125033\07- Sesión\ejercicio8\archivo.csv')
 
 # Asegúrate de que no hay valores NaN en las columnas de interés
 df_clean = df.dropna(subset=['Software de aplicación'])
@@ -28,7 +28,7 @@ if p_value < 0.05:
     
     # Graficar los puntos y la línea de regresión
     plt.figure(figsize=(14, 8))  # Aumentar el tamaño de la figura
-    plt.scatter(df_clean['Semana'], y, color='blue', s=100, label='Datos')
+    plt.scatter(df_clean['Semana'], y, color='cyan', s=100, label='Datos')  # Puntos en cian
     plt.plot(df_clean['Semana'], y_pred, color='red', label='Línea de regresión')
     plt.title('Tendencia de Uso del Software de Aplicación', fontsize=16)
     plt.xlabel('Semana', fontsize=14)

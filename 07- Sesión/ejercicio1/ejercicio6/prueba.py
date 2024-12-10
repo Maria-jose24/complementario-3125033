@@ -28,7 +28,7 @@ if p_value < 0.05:
     
     # Graficar los puntos y la línea de regresión
     plt.figure(figsize=(14, 8))  # Aumentar el tamaño de la figura
-    plt.scatter(df_clean['Semana'], y, color='blue', s=100, label='Datos')
+    plt.scatter(df_clean['Semana'], y, color='skyblue', s=100, label='Datos')  # Puntos de color azul celeste
     plt.plot(df_clean['Semana'], y_pred, color='red', label='Línea de regresión')
     plt.title('Tendencia de CHSAP a lo Largo del Tiempo', fontsize=16)  # Título actualizado
     plt.xlabel('Semana', fontsize=14)
