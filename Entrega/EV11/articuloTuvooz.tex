@@ -1,0 +1,206 @@
+\documentclass[12pt, a4paper, twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{titling}
+\usepackage{tocloft} % Para mejorar la tabla de contenidos
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+
+% Estilo de la tabla de contenidos
+\renewcommand{\cfttoctitlefont}{\Large\bfseries} % Título de la tabla
+\renewcommand{\cftsecfont}{\bfseries} % Secciones en negrita
+\renewcommand{\cftsecpagefont}{\bfseries} % Páginas en negrita
+
+% Configuración de portada
+\title{\Huge\textbf{Artículo de investigación\\ para el proyecto “TuVooz”}}
+\author{
+    \textbf{Maria del Mar Artunduaga Artunduaga} \\
+    \textbf{Cristian Fernando Narváez Sánchez} \\
+    \textbf{Angie Lizeth Trujillo González} \\
+    \textbf{Carolina Martínez Cortés} \\
+    \textbf{Mayra Alejandra Tamayo Perdomo} \\
+    \textbf{Maria José Murcia Martínez}
+}
+\date{\textbf{Ficha: 2694667}}
+
+\begin{document}
+
+% Portada
+\begin{titlingpage}
+    \centering
+    \vspace*{0.5cm}
+    \includegraphics[width=3cm]{logo.png} 
+    \vspace{0.5cm}
+    
+    {\Huge\textbf{Artículo de investigación\\ para el Proyecto “TuVooz”}}
+    \vspace{1.5cm}
+    
+    \textbf{\large Autores:}
+    \vspace{0.5cm}
+    
+    \begin{tabular}{c}
+        \textbf{Maria del Mar Artunduaga Artunduaga} \\
+        \textbf{Cristian Fernando Narváez Sánchez} \\
+        \textbf{Angie Lizeth Trujillo González} \\
+        \textbf{Carolina Martínez Cortés} \\
+        \textbf{Mayra Alejandra Tamayo Perdomo} \\
+        \textbf{Maria José Murcia Martínez}
+    \end{tabular}
+    \vspace{1cm}
+    
+    \textbf{\large Ficha: 2694667}
+    \vspace{1cm}
+    
+    \textbf{\large Instructor: Jesús Ariel Gonzales Bonilla}
+    \vspace{2cm}
+    
+    \textbf{Servicio Nacional de Aprendizaje (SENA)} \\
+    \textbf{2024}\\
+     \centering
+    \vspace*{3cm}
+     \includegraphics[width=3cm]{logoSena.png} 
+    
+\end{titlingpage}
+
+% Tabla de contenidos
+\tableofcontents
+\newpage
+
+
+
+\begin{abstract}
+El presente artículo presenta los resultados obtenidos del proyecto "TuVooz", una plataforma diseñada  para personas con dificultades del habla. Este proyecto surge a partir de una exhaustiva investigación que concluyó que muchas personas con problemas de comunicación carecen de herramientas efectivas para expresarse, lo que limita su interacción social y su calidad de vida.Para llevar a cabo la investigación, se realizaron encuestas y entrevistas con usuarios que sufren de estas discapacidades, donde se identificaron y describieron las deficiencias en las herramientas de comunicación actuales. Además, se llevaron a cabo sesiones de prueba con prototipos de la plataforma en diferentes entornos, lo que permitió corroborar las necesidades y expectativas de los usuarios.
+
+La metodología empleada consistió en un análisis comparativo entre las aplicaciones más usadas del mercado. Este análisis reveló que muchas de estas herramientas no abordan adecuadamente las necesidades específicas de los usuarios con limitaciones del habla, como la personalización de la voz y la facilidad de uso. Las plataformas que ofrecen una experiencia más intuitiva y adaptada son percibidas como más efectivas para facilitar la comunicación.
+Además de la evidencia recopilada mediante encuestas y pruebas con usuarios, es fundamental destacar que la implementación de "TuVooz" no solo mejora la comunicación de los pacientes, sino que también puede tener un impacto positivo en su autoestima y bienestar emocional. Al proporcionar una herramienta accesible y fácil de usar, se espera que los usuarios experimenten una mayor inclusión social y una mejora en su calidad de vida.
+
+En conclusión, se confirma la presencia de deficiencias significativas en las herramientas de comunicación disponibles para personas con problemas del habla. La ausencia de soluciones adecuadas incide negativamente en su capacidad de expresión y participación en la sociedad. "TuVooz" busca abordar estas carencias, ofreciendo una plataforma que facilite la comunicación y empodere a quienes la utilizan.
+Palabras claves:
+Texto a voz, discapacidad,herramientas de comunicación,inclusión social,plataforma.
+
+
+\textbf{Palabras clave}: Arquitectura de Software, Patrones de Diseño, Documentación Técnica, Scrum, Metodologías Ágiles, Diseño de Software, XP.
+\end{abstract}
+
+
+\section{Abstract}
+This article presents the results obtained from the "TuVooz" project, a platform designed for individuals with speech difficulties. This project emerged from extensive research that concluded many people with communication challenges lack effective tools for expression, which limits their social interaction and quality of life. To carry out the research, surveys and interviews were conducted with users facing these disabilities, identifying and describing the deficiencies in current communication tools. Additionally, prototype testing sessions were conducted in various settings, allowing the verification of users' needs and expectations.
+The methodology employed consisted of a comparative analysis of the most widely used applications in the market. This analysis revealed that many of these tools fail to adequately address the specific needs of users with speech limitations, such as voice customization and ease of use. Platforms that offer a more intuitive and tailored experience are perceived as more effective in facilitating communication.
+In addition to the evidence gathered through surveys and user testing, it is important to highlight that the implementation of "TuVooz" not only improves patients' communication but also has the potential to positively impact their self-esteem and emotional well-being. By providing an accessible and user-friendly tool, users are expected to experience greater social inclusion and an improvement in their quality of life.
+In conclusion, the findings confirm the significant deficiencies in the communication tools available for individuals with speech challenges. The absence of adequate solutions negatively affects their ability to express themselves and participate in society. "TuVooz" aims to address these shortcomings by offering a platform that facilitates communication and empowers its users.
+
+\textbf{Keywords}:Text-to-speech, disability, communication tools, social inclusion, platform.
+
+
+
+\section{Introducción}
+
+El proyecto “TuVooz”  tiene como objetivo principal abordar las necesidades de comunicación de las personas con dificultades para hablar, brindando una herramienta accesible que utiliza la conversión de texto a voz y ofrece audios de palabras comunes para facilitar la interacción diaria. En un mundo donde la comunicación es clave para la inclusión y la autonomía, “TuVooz” ofrece soluciones eficaces para superar barreras del habla y permitir que los usuarios se expresen de manera más fluida.
+La iniciativa de “TuVooz” surge como respuesta a la necesidad urgente de muchas personas que, por razones de salud o discapacidad, no pueden comunicarse de forma verbal. La plataforma no solo está diseñada para ayudar a los usuarios a traducir sus pensamientos en palabras a través de texto a voz, sino que también ofrece una serie de frases y palabras comunes pregrabadas en formato de audio, lo que facilita respuestas rápidas y cotidianas en entornos sociales, laborales y familiares.
+El proyecto está centrado en mejorar la calidad de vida de los usuarios finales, permitiéndoles participar de manera más activa y autónoma en sus interacciones diarias. “TuVooz” Es una herramienta útil para cualquier persona que interactúe con personas con dificultades del habla, como familiares, amigos y profesionales de la salud, ya que proporciona una forma clara y efectiva de comunicación.
+
+
+\section{Marco Teórico}
+
+"TuVooz" es una plataforma tecnológica diseñada específicamente para mejorar la comunicación de personas con dificultades del habla mediante el uso de tecnologías innovadoras como la conversión de texto a voz (Text-to-Speech, TTS). Este marco teórico se centra en los fundamentos técnicos y conceptuales que sustentan las funcionalidades del proyecto, destacando la importancia de herramientas inclusivas y accesibles en la sociedad actual.
+Tecnologías Clave en "TuVooz"
+El desarrollo de "TuVooz" se basa en diversas tecnologías que convergen para brindar una solución completa y eficiente:
+Conversión de Texto a Voz (TTS)
+El TTS es una tecnología que transforma texto escrito en discurso hablado utilizando modelos de Inteligencia Artificial. Este avance permite a los usuarios de "TuVooz" comunicarse verbalmente, superando barreras impuestas por su condición. Además, el sistema utiliza voces personalizables para mejorar la experiencia del usuario.
+Diseño de Interfaces Intuitivas
+La usabilidad es un pilar esencial de "TuVooz". La interfaz de usuario ha sido diseñada teniendo en cuenta principios de accesibilidad, asegurando que personas con discapacidades puedan interactuar con la plataforma de manera sencilla y efectiva. Colores contrastantes, iconografía clara y flujos de interacción simplificados son elementos centrales en este aspecto.
+Inteligencia Artificial y Aprendizaje Automático
+La implementación de algoritmos de IA permite personalizar la experiencia de cada usuario, adaptándose a sus necesidades específicas. Esto incluye la selección de frases comunes pregrabadas y la optimización del sistema para diferentes contextos lingüísticos y culturales.
+Contexto Social y Cultural
+El proyecto "TuVooz" responde a la necesidad de crear herramientas que promuevan la inclusión social de personas con dificultades del habla. Según estudios recientes, la falta de comunicación efectiva afecta la autoestima y la integración de estos individuos en entornos laborales, educativos y sociales. "TuVooz" aborda estas problemáticas proporcionando una solución que empodera a sus usuarios.
+Beneficios de "TuVooz"
+Inclusión Social: Al facilitar la comunicación, se promueve la participación activa de los usuarios en actividades cotidianas.
+Autonomía: Los usuarios pueden expresarse sin depender de terceros, aumentando su independencia.
+Mejora Emocional: La capacidad de interactuar eficazmente refuerza la autoestima y el bienestar psicológico.
+
+
+
+\section{Metodología}
+La metodología Scrum fue elegida como la base para el desarrollo de nuestro proyecto "TuVooz" gracias a su enfoque estructurado y dinámico, que promueve una colaboración efectiva entre los miembros del equipo. Este marco ágil se distingue por su capacidad para asignar roles específicos, tales como Scrum Master, Product Owner y Equipo de Desarrollo, garantizando que cada integrante tenga responsabilidades claras que se alineen con los objetivos del proyecto.
+A través de Scrum, podemos descomponer el trabajo en sprints, períodos cortos y manejables que facilitaron un progreso incremental y la entrega continua de funcionalidades del producto. Al final de cada sprint, llevábamos a cabo una reunión de revisión, donde el equipo evaluaba el trabajo completado y ajustaba su enfoque para el siguiente sprint, favoreciendo así un proceso de mejora continua.
+Un elemento crucial para el éxito del proyecto fue la comunicación abierta y constante entre los miembros del equipo, facilitada mediante reuniones diarias, conocidas como Daily Stand-ups. Estas reuniones resultaron fundamentales para identificar obstáculos, ajustar prioridades y asegurar que todos estuvieran alineados con los objetivos establecidos.
+
+Además, el énfasis en la colaboración nos permitió cumplir con los plazos fijados, responder rápidamente a los cambios en los requisitos del cliente o del mercado, y entregar un producto de alta calidad que satisficiera las necesidades de los usuarios.
+
+
+\section{Discusión}
+El desarrollo del proyecto "TuVooz" plantea una reflexión profunda sobre el impacto de la tecnología en la interacción social y la accesibilidad. Al basarse en la metodología Scrum, se evidenció que este marco ágil es eficaz para gestionar la complejidad inherente al proyecto, al permitir ajustes continuos y asegurar entregas incrementales. Esto fue fundamental para responder a los desafíos técnicos y funcionales, especialmente en un entorno cambiante y con altos niveles de incertidumbre.
+
+\section*{Aspectos Claves del Desarrollo}
+
+\subsection*{Metodología Ágil}
+La adopción de Scrum permitió una colaboración constante entre los integrantes del equipo y los interesados. A través de reuniones como la Daily Stand-up y la Sprint Review, fue posible alinear los avances del proyecto con las necesidades emergentes de los usuarios. No obstante, también se identificaron retos, como la sincronización de tareas en equipos distribuidos, que requirieron estrategias adicionales para garantizar la cohesión.
+
+\subsection*{Enfoque en la Usabilidad y Accesibilidad}
+Una de las prioridades del proyecto fue asegurar que "TuVooz" sea accesible para diversos usuarios, incluyendo aquellos con discapacidades. Esto implicó la implementación de guías de accesibilidad como las WCAG 2.1, lo que no solo mejoró la experiencia del usuario sino que también aumentó el alcance del producto. Sin embargo, garantizar un nivel alto de accesibilidad fue un desafío, particularmente al integrar funcionalidades avanzadas como la conversión de texto a voz y viceversa.
+
+\subsection*{Integración de Tecnologías Modernas}
+La implementación de inteligencia artificial, como el uso de tecnologías de conversión de texto a voz, destacó como una innovación importante. Sin embargo, la integración de estas herramientas supuso retos técnicos, como garantizar la precisión y naturalidad de las respuestas generadas, así como mantener un rendimiento eficiente en dispositivos con recursos limitados.
+
+\subsection*{Impacto Social y Ético}
+El proyecto busca democratizar la interacción social y digital mediante un diseño inclusivo. Sin embargo, también surgieron discusiones éticas relacionadas con la privacidad de los datos, especialmente al gestionar información sensible. Esto llevó a reforzar las medidas de seguridad en la aplicación y adoptar prácticas transparentes en el manejo de datos de los usuarios.
+
+\section*{Retos Identificados}
+Durante el desarrollo, surgieron varios retos importantes que influyeron en el ritmo del proyecto:
+\begin{itemize}
+    \item \textbf{Complejidad Técnica}: La combinación de múltiples tecnologías avanzadas, como la inteligencia artificial y los estándares de accesibilidad, implicó un nivel de esfuerzo significativo en la integración y pruebas.
+    \item \textbf{Gestión de Requisitos Cambiantes}: Aunque Scrum permite adaptarse al cambio, manejar cambios frecuentes en los requisitos puede impactar los plazos de entrega.
+    \item \textbf{Limitaciones de Recursos}: Algunas características, como el soporte multiplataforma, enfrentaron restricciones debido a las capacidades técnicas del equipo o las herramientas disponibles.
+\end{itemize}
+
+\section*{Contribuciones del Proyecto}
+A pesar de los desafíos, el proyecto "TuVooz" aporta soluciones innovadoras al promover la inclusión digital y social mediante tecnología avanzada. Este enfoque no solo mejora la interacción entre los usuarios, sino que también posiciona a "TuVooz" como una plataforma versátil y adaptable a las necesidades modernas.
+
+\section*{Resultados}
+
+Como resultados de “Tuvooz” entregaremos una página web y una aplicación móvil para todos los usuarios con las siguientes funciones:
+
+\begin{enumerate}
+    \item Registro de usuarios.
+    \item Inicio de sesión.
+    \item Restablecimiento de contraseña.
+    \item Sección para escribir y presenciar la conversión de texto a voz utilizando Inteligencia Artificial (Text to Speech).
+    \item Palabras provenientes de categorías ubicadas en la sección de “Palabras comunes” que se reproducen con la voz de la Inteligencia Artificial al dar clic sobre estas.
+    \item Sección de “¿Cómo usar TuVooz?” donde se podrá visualizar el manual de la aplicación mediante un botón que lo indica.
+    \item Sección de Ajustes o configuración del sistema:
+    \begin{itemize}
+        \item Mi cuenta.
+        \item Cerrar sesión.
+    \end{itemize}
+    \item Visualización de datos ubicado en el apartado de “Mi Cuenta”.
+    \item Modificación de datos ubicado en el apartado de “Mi Cuenta”:
+    \begin{itemize}
+        \item Nombre de usuario.
+        \item Contraseña.
+    \end{itemize}
+    \item Eliminación de cuenta ubicado en el apartado de “Mi Cuenta”.
+    \item Cierre de sesión.
+\end{enumerate}
+
+\section{Conclusiones}
+El proyecto de “TuVooz” ha sido lanzado exitosamente a la nube completamente funcional para todo el mundo pero principalmente dirigido a la población con problemas del habla, a esa comunidad que no cuentan con el privilegio de hablar de una manera natural y sin complicaciones. La aplicación web y la aplicación movil fueron desarrolladas con las funcionalidades previamente mencionadas, ademas de esto, cuentan con una interfaz intuitiva y muy fácil de usar utilizando los colores: Morado, Blanco, Negro, Verde, Rojo utilizando un estilo retro y bastante moderno que cautiva al usuario a hacer uso del aplicativo.
+El nivel de aprendizaje se vió reflejado en este proyecto formativo e inclusivo, fue poca la experiencia con el lenguaje de programación pero fue mucho el avance que alcanzamos siendo desarrolladores Nivel Junior. Es un paso más alcanzar esta meta reflejando el alcance de este proyecto para nosotros, pero es un gran salto para el mundo alcanzar la equidad e igualdad en comunidades y culturas por medio de la programación y sistemas 
+El impacto potencial de "TuVooz" no se limita únicamente a la población con dificultades del habla, sino que también puede extenderse a otras comunidades y culturas. En un mundo cada vez más interconectado, la capacidad de comunicarse eficazmente es fundamental para el desarrollo social y económico. "TuVooz" ofrece una solución inclusiva y accesible que puede adaptarse a diferentes necesidades lingüísticas y contextos culturales, lo que aumenta su relevancia en diversas partes del mundo. A medida que la tecnología sigue evolucionando, proyectos como "TuVooz" nos recuerdan que la innovación debe estar al servicio de todos, especialmente de aquellos que más lo necesitan.
+Al finalizar este proyecto, no solo sentimos una gran satisfacción por haber alcanzado esta meta, sino también un profundo compromiso con la creación de soluciones tecnológicas que sigan promoviendo la igualdad de oportunidades. Nuestro viaje como desarrolladores junior ha sido desafiante, pero al mismo tiempo increíblemente enriquecedor. "TuVooz" es, sin duda, un paso importante en nuestra formación profesional, pero más allá de eso, es una contribución significativa para hacer del mundo un lugar más inclusivo y equitativo.
+
+\section{Agradecimientos}
+Queremos expresar nuestro más sincero agradecimiento a todo el equipo de "TuVooz", ya que cada uno de sus integrantes aportó su máximo esfuerzo para hacer realidad este proyecto. También extendemos un especial reconocimiento a nuestro instructor, Carlos Julio Cadena Sarasty, quien fue un pilar fundamental, brindándonos apoyo constante y ayudándonos a resolver las dudas y dificultades que enfrentamos a lo largo del camino. 
+Además, agradecemos a todas las personas que participaron en las encuestas y a nuestros compañeros, quienes en numerosas ocasiones colaboraron en las diversas actividades del proyecto. Durante este proceso de aprendizaje, recibimos un valioso respaldo, tanto en términos de conocimientos como de herramientas, que hicieron este recorrido más llevadero y enriquecedor. Gracias a todos ellos, logramos ampliar nuestros saberes y completar este proyecto de manera exitosa.
+
+
+\bibliographystyle{plain}
+\bibliography{referencias}
+\cite{blasco2023mltools, bugarin2024java, claso2024sordas, communications2024python, fernandez2023python, furios2016apps, gonzalez2022ml, grapheverywhere2019machine, karlerickson2024javaai, mintic2024app, paul2018discapacidad, rivas2024normas, strategic2019ia, sulbaran2021manual ,weisheim2022python}
+
+
+\end{document}
